@@ -1,16 +1,24 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello World</title>
-    <script src="/app.js" defer></script>
-  </head>
-  <body>
-    <main>
-      <h1>Hello, world!</h1>
-      <p id="message">Welcome to your JavaScript project.</p>
-      <button id="greet" type="button">Say hello</button>
-    </main>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Penguin Playground</title>
+  <link rel="stylesheet" href="/style.css" />
+  <script type="module" src="/app.js"></script>
+</head>
+<body>
+  <main>
+    <header><span class="eyebrow">A LITTLE ARCTIC ADVENTURE</span><h1>Hello, world<span>!</span></h1><p>Meet your new frosty friend. Take a little waddle.</p></header>
+    <section class="playground" aria-label="Interactive penguin playground">
+      <div id="scene" tabindex="0" aria-label="3D penguin. Use arrow keys or W A S D to move."></div>
+      <p id="status" role="status">Your penguin is ready to explore.</p>
+      <div class="badge">❄ SOUTH POLE · PLAYGROUND</div>
+    </section>
+    <footer><p>Move with <kbd>↑</kbd><kbd>←</kbd><kbd>↓</kbd><kbd>→</kbd> or <kbd>W A S D</kbd><br><small>Drag across the scene to turn your penguin.</small></p>
+      <div class="controls" aria-label="Movement controls"><button data-move="up" aria-label="Move forward">↑</button><div><button data-move="left" aria-label="Move left">←</button><button data-move="down" aria-label="Move backward">↓</button><button data-move="right" aria-label="Move right">→</button></div></div>
+      <button id="reset">Reset position ↺</button>
+    </footer>
+  </main>
+</body>
 </html>
